@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { Card } from "@/components";
 
-import { IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp } from "react-icons/io5";
-
 export default function AboutMePage() {
   return (
     <main className="relative flex justify-center items-start min-h-screen mx-72">
@@ -65,13 +63,6 @@ export default function AboutMePage() {
               <h3 className="h3-medium">English</h3>
             </Card>
           </div>
-        </div>
-
-        {/* social networks */}
-        <div className="absolute flex justify-center items-center gap-10 w-full bottom-5">
-          <IoLogoWhatsapp size={36} className="text-white" />
-          <IoLogoLinkedin size={36} className="text-white" />
-          <IoLogoGithub size={36} className="text-white" />
         </div>
 
       </section>
