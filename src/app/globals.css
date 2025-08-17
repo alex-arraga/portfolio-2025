@@ -24,6 +24,12 @@
   @apply rounded-3xl border border-neutral-500 2xl:p-10;
 }
 
+.project-card {
+  @apply flex max-w-sm cursor-pointer flex-col gap-5 rounded-3xl border
+    border-neutral-500 transition-all duration-300 hover:scale-105
+    hover:shadow-sky-600 hover:shadow-2xl hover:text-sky-100 2xl:p-10;
+}
+
 .skill-card {
   @apply rounded-3xl border border-neutral-500 transition-all duration-300
     hover:scale-105 hover:shadow-sky-600 hover:shadow-2xl hover:text-sky-100 2xl:p-6;
@@ -70,15 +76,15 @@
 }
 
 .h4-semibold {
-  @apply text-lg font-semibold;
+  @apply text-xl font-semibold;
 }
 
 .h4-medium {
-  @apply text-lg font-medium;
+  @apply text-xl font-medium;
 }
 
 .h4-normal {
-  @apply text-lg font-normal;
+  @apply text-xl font-normal;
 }
 
 .txt-gray {
