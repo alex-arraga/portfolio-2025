@@ -24,6 +24,10 @@
   @apply rounded-3xl border border-neutral-500 2xl:p-10;
 }
 
+.divisor {
+  @apply my-2 h-0.5 w-full rounded bg-neutral-800;
+}
+
 .project-card {
   @apply flex max-w-md cursor-pointer flex-col gap-5 rounded-3xl border
     border-neutral-700 transition-all duration-300 hover:scale-105
@@ -96,9 +100,5 @@
 }
 
 .txt-gray {
-  @apply text-base font-normal text-neutral-300;
-}
-
-.txt-white {
-  @apply text-base font-normal text-white;
+  @apply text-neutral-300;
 }

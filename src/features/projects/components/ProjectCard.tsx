@@ -42,7 +42,7 @@ export const ProjectCard = (data: Projects) => {
       </div>
 
       {/* Divisor */}
-      <div className='h-0.5 w-full rounded bg-neutral-800 my-2' />
+      <div className='divisor' />
 
       {/* Goal */}
       <div className='flex flex-col gap-2'>
