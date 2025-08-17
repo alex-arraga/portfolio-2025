@@ -1,7 +1,13 @@
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
-:root {
-  --background: 0, 0, 0;
+.card {
+  @apply rounded-3xl border border-neutral-500 2xl:p-10;
+}
+
+.shadow-card {
+  @apply shadow-xl shadow-neutral-800;
 }
