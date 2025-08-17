@@ -12,8 +12,16 @@
   @apply my-14 flex flex-col items-center justify-center gap-6;
 }
 
+.div-central {
+  @apply flex flex-col items-center justify-center gap-6;
+}
+
 .card {
   @apply rounded-3xl border border-neutral-500 2xl:p-10;
+}
+
+.skill-card {
+  @apply rounded-3xl border border-neutral-500 2xl:p-6;
 }
 
 .shadow-card {

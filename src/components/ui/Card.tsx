@@ -1,11 +1,12 @@
 interface Props {
   children: React.ReactNode
   className: string
+  type?: 'default' | 'skill'
 }
 
-export const Card = ({ children, className }: Props) => {
+export const Card = ({ children, className, type = 'default' }: Props) => {
   return (
-    <div className={`card shadow-card w-full ${className}`}>
+    <div className={`shadow-card w-full ${type === 'skill' ? 'skill-card' : 'card'} ${className}`}>
       {children}
     </div>
   )
