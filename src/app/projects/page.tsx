@@ -1,4 +1,4 @@
-import { ProjectCard, ProjectStatus } from "@/features/projects/components";
+import { ProjectCard, ProjectsReference } from "@/features/projects/components";
 import { BackendProjects, FullStackProjects } from "@/features/projects/constants";
 
 export default function ProjectsPage() {
@@ -17,8 +17,8 @@ export default function ProjectsPage() {
           <h4 className="h4-medium">Status</h4>
 
           <div className="flex justify-start items-center gap-6">
-            <ProjectStatus withText status="production" />
-            <ProjectStatus withText status="personal-project" />
+            <ProjectsReference withText status="production" />
+            <ProjectsReference withText status="personal" />
           </div>
         </div>
 

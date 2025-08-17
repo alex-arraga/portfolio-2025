@@ -1,22 +1,20 @@
 import { Card } from '@/components'
 import React from 'react'
-import { ProjectStatus } from './ProjectStatus'
+import { ProjectsReference } from './ProjectsReference'
 import { StackPills } from './StackPills'
 import { Projects } from '../types'
 
-interface Props {
-  type: 'production' | 'personal-project'
-}
+
 
 export const ProjectCard = (data: Projects) => {
   const type = data.type
   const isPersonalProject = type === 'personal'
 
   return (
-    <Card type='project'>
+    <Card type='project' projectType={type}>
       {/* Title of project */}
       <div className='flex justify-center items-center gap-2'>
-        <ProjectStatus status={isPersonalProject ? 'personal-project' : 'production'} />
+        <ProjectsReference status={isPersonalProject ? 'personal' : 'production'} />
         <h3 className='h3-semibold'>{data.title}</h3>
       </div>
 

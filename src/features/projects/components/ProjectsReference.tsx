@@ -1,9 +1,11 @@
+import { ProjecTypes } from "../types"
+
 interface Props {
   withText?: boolean
-  status: 'production' | 'personal-project'
+  status: ProjecTypes
 }
 
-export const ProjectStatus = ({ status, withText = false }: Props) => {
+export const ProjectsReference = ({ status, withText = false }: Props) => {
   const circleStatusClass = `w-2.5 h-2.5 rounded-full ${status === 'production' ? 'bg-blue-300' : 'bg-teal-300'}`
 
   return (

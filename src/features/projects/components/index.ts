@@ -1,3 +1,3 @@
 export * from './ProjectCard';
-export * from './ProjectStatus';
+export * from './ProjectsReference';
 export * from './StackPills';

@@ -4,6 +4,8 @@ interface BaseProjects {
   stack: string[],
 }
 
+export type ProjecTypes = 'personal' | 'production'
+
 interface PersonalProjects extends BaseProjects {
   type: 'personal'
   architecture?: string,
