@@ -43,7 +43,7 @@ export default function TechStackPage() {
 
 
         {/* Tools */}
-        <div className='div-central mt-10 margin-to-footer'>
+        <div className='div-central mt-10 space-to-footer'>
           <h2 className="h2-semibold mt-10">Tools</h2>
 
           <div className='grid grid-cols-4 gap-10 justify-items-center w-full'>
