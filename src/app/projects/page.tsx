@@ -7,7 +7,11 @@ export default function ProjectsPage() {
         <h1 className="h1-bold">Projects</h1>
 
         <div className="div-central my-10">
-          <ProjectCard />
+          <div className="grid grid-cols-3 gap-8">
+            <ProjectCard type="personal-project" />
+            <ProjectCard type="personal-project" />
+            <ProjectCard type="personal-project" />
+          </div>
         </div>
 
       </section>

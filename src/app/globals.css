@@ -25,9 +25,10 @@
 }
 
 .project-card {
-  @apply flex max-w-sm cursor-pointer flex-col gap-5 rounded-3xl border
-    border-neutral-500 transition-all duration-300 hover:scale-105
-    hover:shadow-sky-600 hover:shadow-2xl hover:text-sky-100 2xl:p-10;
+  @apply flex max-w-md cursor-pointer flex-col gap-5 rounded-3xl border
+    border-neutral-700 transition-all duration-300 hover:scale-105
+    hover:shadow-sky-600 hover:border-neutral-400 hover:shadow-2xl
+    hover:text-sky-200 2xl:p-10;
 }
 
 .skill-card {
