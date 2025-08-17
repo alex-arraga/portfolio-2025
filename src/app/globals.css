@@ -12,8 +12,8 @@
   @apply my-14 flex flex-col items-center justify-center gap-6;
 }
 
-.margin-to-footer {
-  @apply mb-40;
+.space-to-footer {
+  @apply pb-40;
 }
 
 .div-central {
