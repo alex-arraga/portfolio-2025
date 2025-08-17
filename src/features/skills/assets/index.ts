@@ -1,0 +1,21 @@
+const basePath = '/images/skills'
+
+export const AWSImage = `${basePath}/aws.png`
+export const CSSImage = `${basePath}/css.png`
+export const DockerImage = `${basePath}/docker.png`
+export const FigmaImage = `${basePath}/figma.png`
+export const GitImage = `${basePath}/git.png`
+export const GitHubImage = `${basePath}/github.png`
+export const GoImage = `${basePath}/go.png`
+export const GrafanaImage = `${basePath}/grafana.png`
+export const HexagonImage = `${basePath}/hexagon.png`
+export const HTMLImage = `${basePath}/html.png`
+export const JiraImage = `${basePath}/jira.png`
+export const MicroServicesImage = `${basePath}/microservices.png`
+export const MongoImage = `${basePath}/mongo.png`
+export const NextImage = `${basePath}/next.png`
+export const NotionImage = `${basePath}/notion.png`
+export const PostgresImage = `${basePath}/postgres.png`
+export const PostmanImage = `${basePath}/postman.png`
+export const ReactImage = `${basePath}/react.png`
+export const TypeScriptImage = `${basePath}/typescript.png`
