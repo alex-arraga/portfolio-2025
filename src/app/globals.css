@@ -26,7 +26,7 @@
 
 .skill-card {
   @apply rounded-3xl border border-neutral-500 transition-all duration-300
-    hover:scale-105 hover:shadow-sky-600 hover:shadow-2xl 2xl:p-6;
+    hover:scale-105 hover:shadow-sky-600 hover:shadow-2xl hover:text-sky-100 2xl:p-6;
 }
 
 .shadow-card {

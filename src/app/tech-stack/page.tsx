@@ -14,7 +14,7 @@ export default function TechStackPage() {
 
           <div className='grid grid-cols-3 gap-10 justify-items-center'>
             {MainSkills.map((skill) => (
-              <StackSkillCard key={skill.id} skill={skill} />
+              <StackSkillCard key={skill.id + skill.name} {...skill} />
             ))}
           </div>
         </div>
@@ -25,7 +25,7 @@ export default function TechStackPage() {
 
           <div className='grid grid-cols-2 gap-10 justify-items-center'>
             {ArchitectureSkills.map((skill) => (
-              <StackSkillCard key={skill.id} skill={skill} />
+              <StackSkillCard key={skill.id + skill.name} {...skill} />
             ))}
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function TechStackPage() {
 
           <div className='grid grid-cols-4 gap-10'>
             {OtherSkills.map((skill) => (
-              <StackSkillCard key={skill.id} skill={skill} />
+              <StackSkillCard key={skill.id + skill.name} {...skill} />
             ))}
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function TechStackPage() {
 
           <div className='grid grid-cols-4 gap-10 justify-items-center w-full'>
             {ToolSkills.map((skill) => (
-              <StackSkillCard key={skill.id} skill={skill} />
+              <StackSkillCard key={skill.id + skill.name} {...skill} />
             ))}
           </div>
         </div>

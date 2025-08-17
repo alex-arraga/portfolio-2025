@@ -2,24 +2,20 @@ import Image from 'next/image'
 import { Card } from '@/components'
 import { SkillCard } from '../types'
 
-interface Props {
-  skill: SkillCard
-}
-
-export const StackSkillCard = ({ skill }: Props) => {
+export const StackSkillCard = ({ id, image, name }: SkillCard) => {
   return (
-    <Card key={skill.id} type='skill' className='flex flex-col justify-center items-center gap-4'>
-      <div className='relative h-48 w-48 rounded-xl'>
+    <Card type='skill' className='flex flex-col justify-center items-center gap-4'>
+      <div className='relative h-40 w-40 rounded-xl'>
         <Image
-          src={skill.image}
-          alt={skill.name}
+          src={image}
+          alt={name}
           fill
           priority
-          sizes="192px"
+          sizes="160px"
           className='object-contain rounded-xl'
         />
       </div>
-      <p className='txt-white pt-4'>{skill.name}</p>
+      <p>{name}</p>
     </Card>
   )
 }
