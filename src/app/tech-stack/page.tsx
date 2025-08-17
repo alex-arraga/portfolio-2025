@@ -1,7 +1,5 @@
-import { Card } from '@/components';
 import { StackSkillCard } from '@/features/skills/components';
 import { ArchitectureSkills, MainSkills, OtherSkills, ToolSkills } from '@/features/skills/constants';
-import Image from 'next/image';
 
 export default function TechStackPage() {
   return (
