@@ -1,4 +1,5 @@
 import { ProjectCard, ProjectStatus } from "@/features/projects/components";
+import { BackendProjects, FullStackProjects } from "@/features/projects/constants";
 
 export default function ProjectsPage() {
   return (
@@ -6,7 +7,7 @@ export default function ProjectsPage() {
       <section className="container-section">
         <h1 className="h1-bold">Projects</h1>
 
-        {/* Backend projects */}
+        {/* Backend title */}
         <div className="flex justify-start items-center w-full my-4">
           <h2 className="h2-semibold">Backend</h2>
         </div>
@@ -21,24 +22,26 @@ export default function ProjectsPage() {
           </div>
         </div>
 
+        {/* Backend projects */}
         <div className="div-central">
           <div className="grid grid-cols-3 gap-8">
-            <ProjectCard type="personal-project" />
-            <ProjectCard type="personal-project" />
-            <ProjectCard type="personal-project" />
+            {BackendProjects.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
           </div>
         </div>
 
-        {/* Full Stack projects */}
+        {/* Full Stack title */}
         <div className="flex justify-start items-center w-full mt-20 mb-4">
           <h2 className="h2-semibold">Full Stack</h2>
         </div>
 
+        {/* Full Stack projects */}
         <div className="div-central">
           <div className="grid grid-cols-3 gap-8">
-            <ProjectCard type="personal-project" />
-            <ProjectCard type="personal-project" />
-            <ProjectCard type="personal-project" />
+            {FullStackProjects.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
           </div>
         </div>
 
