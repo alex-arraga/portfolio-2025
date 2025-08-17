@@ -3,12 +3,10 @@ import { Card } from "@/components";
 
 export default function AboutMePage() {
   return (
-    <main className="relative flex justify-center items-start min-h-screen mx-72">
+    <main className="container-page">
+      <section className="container-section">
 
-      <section className="flex flex-col justify-center items-center gap-6 my-14">
-        <h1 className="h1-bold">
-          About me
-        </h1>
+        <h1 className="h1-bold">About me</h1>
 
         <div className="flex flex-col gap-6">
           {/* Me */}

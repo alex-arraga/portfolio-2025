@@ -4,6 +4,14 @@
 
 @tailwind utilities;
 
+.container-page {
+  @apply relative mx-72 flex min-h-screen items-start justify-center;
+}
+
+.container-section {
+  @apply my-14 flex flex-col items-center justify-center gap-6;
+}
+
 .card {
   @apply rounded-3xl border border-neutral-500 2xl:p-10;
 }
