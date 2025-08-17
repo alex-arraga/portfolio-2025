@@ -41,12 +41,12 @@ export const Navbar = () => {
       <nav className='flex flex-col items-center justify-center min-h-screen gap-10'>
 
         {OptionsNav.map((option) => (
-          <div className={`
-            flex justify-center items-center p-1 rounded-full duration-300 transition-all hover:scale-125
+          <div
+            key={option.id + option.name}
+            className={`flex justify-center items-center p-1 rounded-full duration-300 transition-all hover:scale-125
             ${pahtname === option.path ? 'bg-sky-600' : 'bg-none opacity-20 hover:opacity-100'}
           `}>
             <Link
-              key={option.id}
               href={option.path}
               title={option.name}
             >

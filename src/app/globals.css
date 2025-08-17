@@ -12,6 +12,10 @@
   @apply my-14 flex flex-col items-center justify-center gap-6;
 }
 
+.margin-to-footer {
+  @apply mb-40
+}
+
 .div-central {
   @apply flex flex-col items-center justify-center gap-6;
 }
@@ -21,7 +25,8 @@
 }
 
 .skill-card {
-  @apply rounded-3xl border border-neutral-500 2xl:p-6;
+  @apply rounded-3xl border border-neutral-500 transition-all duration-300
+    hover:scale-105 hover:shadow-sky-600 hover:shadow-2xl 2xl:p-6;
 }
 
 .shadow-card {

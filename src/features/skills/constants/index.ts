@@ -1,3 +1,4 @@
+import { SkillCard } from "../types"
 import {
   AWSImage,
   DockerImage,
@@ -16,13 +17,8 @@ import {
   TypeScriptImage
 } from "../assets"
 
-interface SkillCard {
-  id: number
-  name: string
-  image: string
-}
 
-export const MainStack: SkillCard[] = [
+export const MainSkills: SkillCard[] = [
   {
     id: 1,
     name: 'Next.js',

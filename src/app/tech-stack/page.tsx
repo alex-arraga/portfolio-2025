@@ -1,4 +1,6 @@
 import { Card } from '@/components';
+import { StackSkillCard } from '@/features/skills/components';
+import { ArchitectureSkills, MainSkills, OtherSkills, ToolSkills } from '@/features/skills/constants';
 import Image from 'next/image';
 
 export default function TechStackPage() {
@@ -9,24 +11,49 @@ export default function TechStackPage() {
         <h1 className="h1-bold">Tech Stack</h1>
 
         {/* Main */}
-        <div className='div-central'>
+        <div className='div-central my-10'>
           <h2 className="h2-semibold mt-10">Main</h2>
 
-          <Card type='skill' className='flex flex-col justify-center items-center gap-4'>
-            <div className='relative h-48 w-48 rounded-xl'>
-              <Image
-                src={'/images/skills/next.png'}
-                alt='next.js'
-                fill
-                className='object-contain rounded-xl'
-              />
-            </div>
-            <p className='txt-white pt-4'>Next.js</p>
-          </Card>
+          <div className='grid grid-cols-3 gap-10 justify-items-center'>
+            {MainSkills.map((skill) => (
+              <StackSkillCard key={skill.id} skill={skill} />
+            ))}
+          </div>
+        </div>
 
+        {/* Architectures */}
+        <div className='div-central my-10'>
+          <h2 className="h2-semibold mt-10">Architectures</h2>
+
+          <div className='grid grid-cols-2 gap-10 justify-items-center'>
+            {ArchitectureSkills.map((skill) => (
+              <StackSkillCard key={skill.id} skill={skill} />
+            ))}
+          </div>
+        </div>
+
+        {/* Others */}
+        <div className='div-central my-10'>
+          <h2 className="h2-semibold mt-10">Others</h2>
+
+          <div className='grid grid-cols-4 gap-10'>
+            {OtherSkills.map((skill) => (
+              <StackSkillCard key={skill.id} skill={skill} />
+            ))}
+          </div>
         </div>
 
 
+        {/* Tools */}
+        <div className='div-central mt-10 margin-to-footer'>
+          <h2 className="h2-semibold mt-10">Tools</h2>
+
+          <div className='grid grid-cols-4 gap-10 justify-items-center w-full'>
+            {ToolSkills.map((skill) => (
+              <StackSkillCard key={skill.id} skill={skill} />
+            ))}
+          </div>
+        </div>
 
       </section>
     </main>
