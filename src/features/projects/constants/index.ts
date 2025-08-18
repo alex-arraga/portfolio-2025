@@ -56,7 +56,7 @@ export const FullStackProjects: Projects[] = [
     stack: ['Next.js', 'TypeScript'],
     rol: 'Full Stack Developer',
     date: '21/04/2025 - Actualidad',
-    manager: 'Ricardo | +56 9 5632 1548'
+    manager: 'Ricardo | +56 9 56321548'
   },
 
   // Personal
