@@ -17,21 +17,21 @@
 }
 
 .div-central {
-  @apply flex flex-col items-center justify-center gap-6;
-}
-
-.card {
-  @apply rounded-3xl border border-neutral-500 2xl:p-10;
+  @apply flex flex-col items-center justify-center gap-8;
 }
 
 .divisor {
   @apply my-2 h-0.5 w-full rounded bg-neutral-800;
 }
 
+.card {
+  @apply rounded-3xl border border-neutral-700 2xl:p-10;
+}
+
 .project-card {
   @apply flex max-w-md cursor-pointer flex-col gap-5 rounded-3xl border
     border-neutral-700 transition-all duration-300 hover:scale-105
-    hover:border-neutral-400 hover:shadow-2xl 2xl:p-10;
+    hover:border-neutral-400 hover:shadow-xl 2xl:p-10;
 }
 
 .personal-project-card {
@@ -43,12 +43,19 @@
 }
 
 .skill-card {
-  @apply rounded-3xl border border-neutral-500 transition-all duration-300
-    hover:scale-105 hover:shadow-sky-600 hover:shadow-2xl hover:text-sky-100 2xl:p-6;
+  @apply rounded-3xl border border-neutral-700 transition-all duration-300
+    hover:scale-105 hover:shadow-sky-200 hover:border-neutral-400 hover:text-sky-100
+    2xl:p-6;
+}
+
+.work-card {
+  @apply cursor-pointer rounded-3xl border border-neutral-700 transition-all
+    duration-300 hover:shadow-sky-200 hover:border-neutral-400 hover:scale-105
+    hover:shadow-xl 2xl:p-10;
 }
 
 .shadow-card {
-  @apply shadow-xl shadow-neutral-800;
+  @apply shadow-lg shadow-neutral-700;
 }
 
 .h1-bold {
