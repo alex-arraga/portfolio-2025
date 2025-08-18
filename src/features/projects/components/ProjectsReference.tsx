@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const ProjectsReference = ({ status, withText = false }: Props) => {
-  const circleStatusClass = `w-2.5 h-2.5 rounded-full ${status === 'production' ? 'bg-blue-300' : 'bg-teal-300'}`
+  const circleStatusClass = `w-2.5 h-2.5 rounded-full ${status === 'production' ? 'bg-purple-300' : 'bg-teal-300'}`
 
   return (
     <>

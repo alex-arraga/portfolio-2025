@@ -39,18 +39,18 @@
 }
 
 .production-project-card {
-  @apply transition-all duration-300 hover:shadow-sky-600 hover:text-sky-300;
+  @apply transition-all duration-300 hover:shadow-purple-600 hover:text-purple-300;
 }
 
 .skill-card {
   @apply rounded-3xl border border-neutral-700 transition-all duration-300
-    hover:scale-105 hover:shadow-sky-200 hover:border-neutral-400 hover:text-sky-100
-    2xl:p-6;
+    hover:scale-105 hover:shadow-slate-600 hover:border-neutral-400
+    hover:text-sky-100 2xl:p-6;
 }
 
 .work-card {
   @apply cursor-pointer rounded-3xl border border-neutral-700 transition-all
-    duration-300 hover:shadow-sky-200 hover:border-neutral-400 hover:scale-105
+    duration-300 hover:shadow-slate-600 hover:border-neutral-400 hover:scale-105
     hover:shadow-xl 2xl:p-10;
 }
 
