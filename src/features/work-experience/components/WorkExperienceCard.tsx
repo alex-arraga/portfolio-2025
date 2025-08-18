@@ -6,7 +6,7 @@ export const WorkExperienceCard = (data: WorkExperience) => {
   return (
     <Card type='work' className="flex flex-col justify-between gap-6 items-start">
       {/* Image */}
-      <div className='relative aspect-video w-full max-h-32 rounded-2xl'>
+      <div className='relative aspect-video w-full max-h-24 rounded-2xl'>
         <Image
           src={data.image}
           alt={`logo of ${data.name}`}

@@ -7,7 +7,7 @@ export default function WorkExperiencePage() {
       <section className="container-section">
         <h1 className="h1-semibold">Work Experience</h1>
 
-        <div className="div-central mt-16">
+        <div className="div-central mt-10">
           <div className="grid grid-cols-3 justify-items-start items-start gap-10">
             {WorkExperiences.map((data, index) => (
               <WorkExperienceCard key={data.name + index} {...data} />

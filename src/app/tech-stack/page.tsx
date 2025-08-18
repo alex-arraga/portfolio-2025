@@ -8,7 +8,7 @@ export default function TechStackPage() {
         <h1 className="h1-bold">Tech Stack</h1>
 
         {/* Main */}
-        <div className='div-central mt-16'>
+        <div className='div-central mt-10'>
           <h2 className="h2-semibold">Main</h2>
 
           <div className='grid grid-cols-3 gap-10 justify-items-center'>
@@ -19,7 +19,7 @@ export default function TechStackPage() {
         </div>
 
         {/* Architectures */}
-        <div className='div-central mt-16'>
+        <div className='div-central mt-10'>
           <h2 className="h2-semibold">Architectures</h2>
 
           <div className='grid grid-cols-2 gap-10 justify-items-center'>
@@ -30,7 +30,7 @@ export default function TechStackPage() {
         </div>
 
         {/* Others */}
-        <div className='div-central mt-16'>
+        <div className='div-central mt-10'>
           <h2 className="h2-semibold">Others</h2>
 
           <div className='grid grid-cols-4 gap-10'>
@@ -42,7 +42,7 @@ export default function TechStackPage() {
 
 
         {/* Tools */}
-        <div className='div-central mt-16 space-to-footer'>
+        <div className='div-central mt-10 space-to-footer'>
           <h2 className="h2-semibold">Tools</h2>
 
           <div className='grid grid-cols-4 gap-10 justify-items-center w-full'>
