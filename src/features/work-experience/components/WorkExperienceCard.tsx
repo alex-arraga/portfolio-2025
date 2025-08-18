@@ -36,13 +36,13 @@ export const WorkExperienceCard = () => {
       </div>
 
       {/* Image */}
-      <div className="relative aspect-square h-60 w-60">
+      <div className="relative aspect-square h-60 w-60 rounded 2xl">
         <Image
           src={NextImage}
           alt='algo'
           fill
           priority
-          className='object-contain'
+          className='object-contain rounded-2xl'
         />
       </div>
     </Card>

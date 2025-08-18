@@ -1,4 +1,4 @@
-import { WorkExperienceCard } from "@/features/work-experience/component"
+import { WorkExperienceCard } from "@/features/work-experience/components"
 
 export default function WorkExperiencePage() {
   return (
