@@ -1,4 +1,5 @@
 import { WorkExperienceCard } from "@/features/work-experience/components"
+import { WorkExperiences } from '@/features/work-experience/constants';
 
 export default function WorkExperiencePage() {
   return (
@@ -7,7 +8,9 @@ export default function WorkExperiencePage() {
         <h1 className="h1-semibold">Work Experience</h1>
 
         <div className="div-central">
-          <WorkExperienceCard />
+          {WorkExperiences.map((data, index) => (
+            <WorkExperienceCard key={data.name + index} {...data} />
+          ))}
         </div>
       </section>
     </main>

@@ -1,7 +1,7 @@
 type CompanyNames = 'Garage Go' | 'Gestiona Tus Datos' | 'Podo Vip'
 type Roles = 'Full Stack Developer' | 'Diseñador UX/UI'
 
-interface WorkExperience {
+export interface WorkExperience {
   name: CompanyNames,
   description: string,
   role: Roles[],

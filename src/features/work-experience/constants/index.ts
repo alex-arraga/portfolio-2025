@@ -1,4 +1,5 @@
 import { GarageGoImage, GestionaTusDatosImage, PodoVipImage } from "../assets";
+import { WorkExperience } from "../types";
 
 export const WorkExperiences: WorkExperience[] = [
   {
