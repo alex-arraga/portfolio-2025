@@ -11,25 +11,25 @@ const OptionsNav = [
     id: 1,
     name: 'About Me',
     path: '/about-me',
-    icon: <IoPersonCircleSharp className='w-5 h-5 text-white' />
+    icon: <IoPersonCircleSharp className='w-5 h-5 text-neutral-700' />
   },
   {
     id: 2,
     name: 'Projects',
     path: '/projects',
-    icon: <PiFileCodeFill className='w-5 h-5 text-white' />
+    icon: <PiFileCodeFill className='w-5 h-5 text-neutral-700' />
   },
   {
     id: 3,
     name: 'Tech Stack',
     path: '/tech-stack',
-    icon: <PiCodeSimpleBold className='w-5 h-5 text-white' />
+    icon: <PiCodeSimpleBold className='w-5 h-5 text-neutral-700' />
   },
   {
     id: 4,
     name: 'Work Experience',
     path: '/work-experience',
-    icon: <PiBagSimpleFill className='w-5 h-5 text-white' />
+    icon: <PiBagSimpleFill className='w-5 h-5 text-neutral-700' />
   },
 ]
 
@@ -44,7 +44,7 @@ export const Navbar = () => {
           <div
             key={option.id + option.name}
             className={`flex justify-center items-center p-1 rounded-full duration-300 transition-all hover:scale-125
-            ${pahtname === option.path ? 'bg-sky-600' : 'bg-none opacity-20 hover:opacity-100'}
+            ${pahtname === option.path ? 'bg-white' : 'hover:brightness-200'}
           `}>
             <Link
               href={option.path}
