@@ -24,7 +24,7 @@ export const WorkExperienceCard = (data: WorkExperience) => {
             <span className="text-white font-medium">Rol: </span>
             {data.role.map((item, index) =>
               <span key={index}>
-                {item.length > 1 && index > 0 ? '|' + item : item}
+                {item.length > 1 && index > 0 ? ' | ' + item : item}
               </span>
             )}
           </p>

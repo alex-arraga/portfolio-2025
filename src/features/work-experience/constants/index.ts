@@ -11,19 +11,19 @@ export const WorkExperiences: WorkExperience[] = [
     image: GarageGoImage
   },
   {
-    name: 'Gestiona Tus Datos',
+    name: 'Podo Vip',
     description: 'Plataforma que ofrece venta de cursos online especializados en podología, contiene material didáctico y entrega certificados avalados por instituciones y especialistas reconocidos en el sector.',
-    role: ['Full Stack Developer', 'Diseñador UX/UI'],
-    date: '21/04/25 - Actualidad',
+    role: ['Full Stack Developer'],
+    date: '05/08/2025 - Actualidad',
     manager: 'Javier Palma | +56 9 34172037',
-    image: GestionaTusDatosImage
+    image: PodoVipImage
   },
   {
-    name: 'Podo Vip',
+    name: 'Gestiona Tus Datos',
     description: 'Firma chilena especializada en transformar datos públicos y privados en reportes dinámicos y paneles de control para facilitar la toma de decisiones, especialmente orientada a instituciones públicas como municipalidades y entidades del Estado.',
-    role: ['Full Stack Developer'],
-    date: '21/04/25 - Actualidad',
+    role: ['Full Stack Developer', 'Diseñador UX/UI'],
+    date: '12/05/2025 - 24/06/2025',
     manager: 'Ricardo | +56 9 56321548',
-    image: PodoVipImage
+    image: GestionaTusDatosImage
   },
 ]
