@@ -14,7 +14,7 @@ export default function ProjectsPage() {
           </div>
 
           {/* References */}
-          <div className="flex flex-col w-full gap-4">
+          <div className="flex flex-col w-full gap-2 sm:gap-4">
             <h4 className="h4-medium">Status</h4>
 
             <div className="flex justify-start items-center gap-6">
@@ -25,7 +25,7 @@ export default function ProjectsPage() {
 
           {/* Backend projects */}
           <div className="div-central">
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {BackendProjects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
@@ -33,13 +33,13 @@ export default function ProjectsPage() {
           </div>
 
           {/* Full Stack title */}
-          <div className="flex justify-start items-center w-full mt-20 mb-4">
+          <div className="flex justify-start items-center w-full">
             <h2 className="h2-semibold">Full Stack</h2>
           </div>
 
           {/* Full Stack projects */}
           <div className="div-central">
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {FullStackProjects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
