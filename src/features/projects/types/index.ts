@@ -11,6 +11,7 @@ interface PersonalProjects extends BaseProjects {
   architecture?: string,
   goal: string,
   solution: string
+  link: string
 }
 
 interface ProductionProjects extends BaseProjects {
@@ -18,6 +19,7 @@ interface ProductionProjects extends BaseProjects {
   rol: string,
   date: string,
   manager: string
+  link: string
 }
 
 interface InProcessProjects extends BaseProjects {

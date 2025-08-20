@@ -1,3 +1,10 @@
+import {
+  CalculatorLink,
+  GarageGoLink,
+  GestionDatosLink,
+  JavierManager,
+  RicardoManager, RssScraperLink, TesloShopLink, ToDoLink
+} from "@/constants";
 import { Projects } from "../types";
 
 export const BackendProjects: Projects[] = [
@@ -8,25 +15,8 @@ export const BackendProjects: Projects[] = [
     stack: ['Go', 'Postgres'],
     architecture: 'REST API',
     goal: 'Obtener datos estructurados de múltiples fuentes',
-    solution: 'Ejecuta rutinas para extraer datos de cada feed y los almacena en base de datos.'
-  },
-  {
-    type: 'personal',
-    title: 'API Ecommerce',
-    description: 'permite autenticar usuarios y realizar un flujo de compra con Mercado Pago como pasarela de pago',
-    stack: ['Go', 'Chi', 'Postgres'],
-    architecture: 'Hexagonal - Micro Servicios',
-    goal: 'Simular una las funcionalidades y complejidad de un ecommerce real',
-    solution: 'Utilizar una arquitectura de Micro Servicios para la aplicación, donde cada modulo utiliza Hexagonal Architecture'
-  },
-  {
-    type: 'personal',
-    title: 'Live chat',
-    description: 'Un chat en tiempo real similar a WhatsApp pero enteramente escrita en Go',
-    stack: ['Go', 'Chi', 'Websockets', 'Postgres'],
-    architecture: 'REST API',
-    goal: 'Aprender a utilizar websockets y servidores en vivo',
-    solution: 'Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum '
+    solution: 'Ejecuta rutinas para extraer datos de cada feed y los almacena en base de datos',
+    link: RssScraperLink
   },
 ]
 
@@ -34,11 +24,12 @@ export const FullStackProjects: Projects[] = [
   {
     type: 'production',
     title: 'Garage Go',
-    description: 'un ecommerce enfocado en ofrecer servicios del sector automotriz',
+    description: 'Un ecommerce enfocado en ofrecer servicios del sector automotriz',
     stack: ['Next.js', 'TypeScript', 'MongoDB'],
     rol: 'Full Stack Developer',
     date: '21/04/2025 - Actualidad',
-    manager: 'Javier Palma | +56 9 34172037'
+    manager: JavierManager,
+    link: GarageGoLink
   },
   {
     type: 'in-process',
@@ -47,43 +38,68 @@ export const FullStackProjects: Projects[] = [
     stack: ['Next.js', 'TypeScript', 'Postgres'],
     rol: 'Full Stack Developer',
     date: '21/04/2025 - Actualidad',
-    manager: 'Javier Palma | +56 9 34172037'
+    manager: JavierManager
   },
   {
     type: 'production',
     title: 'Gestiona Tus Datos',
-    description: 'Plataforma de cursos online especializados en podología',
+    description: 'Empresa que transforma datos públicos en informes accesibles a la comunidad',
     stack: ['Next.js', 'TypeScript'],
     rol: 'Full Stack Developer',
     date: '21/04/2025 - Actualidad',
-    manager: 'Ricardo | +56 9 56321548'
+    manager: RicardoManager,
+    link: GestionDatosLink
   },
 
   // Personal
   {
     type: 'personal',
     title: 'Teslo Shop',
-    description: 'Un chat en tiempo real similar a WhatsApp pero enteramente escrita en Go',
+    description: 'Una ecommerce que ofrece ropa de la marca Tesla',
     stack: ['Next.js', 'TypeScript', 'Postgres'],
     architecture: 'Server Actions',
-    goal: 'Aprender a utilizar websockets y servidores en vivo',
-    solution: 'Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum '
+    goal: 'Crear una tienda online desde el comienzo para entender los flujos y la complejidad que conlleva este tipo de apps',
+    solution: 'Utilizar el poder de las Server Actions y una base de datos Postgres, donde se guardan todas las entidades relacionadas al negocio',
+    link: TesloShopLink
   },
   {
     type: 'personal',
     title: 'Calculadora',
-    description: 'Un chat en tiempo real similar a WhatsApp pero enteramente escrita en Go',
+    description: 'Permite almacenar un historial de calculos, además de realizar operaciones complejas',
     stack: ['Next.js', 'TypeScript', 'Postgres'],
-    goal: 'Aprender a utilizar websockets y servidores en vivo',
-    solution: 'Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum '
+    goal: 'Crear una herramienta de cálculo que elimine la necesidad de recordar o reingresar resultados anteriores',
+    solution: 'Permitir al usuario generar un historial de cálculos, mostrando el detalle de cada operación y su resultado',
+    link: CalculatorLink
   },
   {
     type: 'personal',
     title: 'To Do',
-    description: 'Un chat en tiempo real similar a WhatsApp pero enteramente escrita en Go',
+    description: 'Una aplicación para crear y gestionar tareas pendientes',
     stack: ['Next.js', 'TypeScript', 'Postgres'],
-    goal: 'Aprender a utilizar websockets y servidores en vivo',
-    solution: 'Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum '
+    goal: 'Aprender a utilizar bases de datos para crear tareas y marcarlas como completadas',
+    solution: 'Utilización de Postgres y formularios para la creación de las mismas',
+    link: ToDoLink
   },
 ]
 
+/*
+! Projects to do
+{
+  type: 'personal',
+  title: 'API Ecommerce',
+  description: 'permite autenticar usuarios y realizar un flujo de compra con Mercado Pago como pasarela de pago',
+  stack: ['Go', 'Chi', 'Postgres'],
+  architecture: 'Hexagonal - Micro Servicios',
+  goal: 'Simular una las funcionalidades y complejidad de un ecommerce real',
+  solution: 'Utilizar una arquitectura de Micro Servicios para la aplicación, donde cada modulo utiliza Hexagonal Architecture'
+},
+{
+  type: 'personal',
+  title: 'Live chat',
+  description: 'Un chat en tiempo real similar a WhatsApp pero enteramente escrita en Go',
+  stack: ['Go', 'Chi', 'Websockets', 'Postgres'],
+  architecture: 'REST API',
+  goal: 'Aprender a utilizar websockets y servidores en vivo',
+  solution: 'Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum '
+},
+*/
