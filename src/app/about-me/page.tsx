@@ -48,18 +48,21 @@ export default function AboutMePage() {
             </Card>
 
             {/* Age */}
-            <Card className="flex flex-col justify-center items-center gap-4 md:gap-6 w-full md:max-w-60">
-              <h3 className="text-base md:h3-medium">Edad</h3>
-              <span className="text-6xl md:text-7xl font-bold">25</span>
-              <h3 className="text-base md:h3-medium">Años</h3>
-            </Card>
+            <div className="flex md:hidden gap-4 justify-center items-center">
+              <Card className="flex flex-col justify-center items-center gap-4 md:gap-6 w-full md:max-w-60">
+                <h3 className="text-base md:h3-medium">Edad</h3>
+                <span className="text-6xl md:text-7xl font-bold">25</span>
+                <h3 className="text-base md:h3-medium">Años</h3>
+              </Card>
 
-            {/* English */}
-            <Card className="flex flex-col justify-center items-center gap-4 md:gap-6 w-full md:max-w-60">
-              <h3 className="text-base md:h3-medium">Level</h3>
-              <span className="text-6xl md:text-7xl font-bold">B1</span>
-              <h3 className="text-base md:h3-medium">English</h3>
-            </Card>
+              {/* English */}
+              <Card className="flex flex-col justify-center items-center gap-4 md:gap-6 w-full md:max-w-60">
+                <h3 className="text-base md:h3-medium">Level</h3>
+                <span className="text-6xl md:text-7xl font-bold">B1</span>
+                <h3 className="text-base md:h3-medium">English</h3>
+              </Card>
+            </div>
+
           </div>
         </div>
 

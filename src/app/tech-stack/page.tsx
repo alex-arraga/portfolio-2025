@@ -8,10 +8,10 @@ export default function TechStackPage() {
         <h1 className="h1-bold">Tech Stack</h1>
 
         {/* Main */}
-        <div className='div-central mt-10'>
+        <div className='div-central'>
           <h2 className="h2-semibold">Main</h2>
 
-          <div className='grid grid-cols-3 gap-10 justify-items-center'>
+          <div className='grid grid-cols-3 gap-4 md:gap-6 xl:gap-10 justify-items-center'>
             {MainSkills.map((skill) => (
               <StackSkillCard key={skill.id + skill.name} {...skill} />
             ))}
@@ -19,10 +19,10 @@ export default function TechStackPage() {
         </div>
 
         {/* Architectures */}
-        <div className='div-central mt-10'>
+        <div className='div-central'>
           <h2 className="h2-semibold">Architectures</h2>
 
-          <div className='grid grid-cols-2 gap-10 justify-items-center'>
+          <div className='grid grid-cols-2 gap-4 md:gap-6 xl:gap-10 justify-items-center'>
             {ArchitectureSkills.map((skill) => (
               <StackSkillCard key={skill.id + skill.name} {...skill} />
             ))}
@@ -30,10 +30,10 @@ export default function TechStackPage() {
         </div>
 
         {/* Others */}
-        <div className='div-central mt-10'>
+        <div className='div-central'>
           <h2 className="h2-semibold">Others</h2>
 
-          <div className='grid grid-cols-4 gap-10'>
+          <div className='grid grid-cols-3 md:grid-cols-4 gap-4 md:gap-6 xl:gap-10'>
             {OtherSkills.map((skill) => (
               <StackSkillCard key={skill.id + skill.name} {...skill} />
             ))}
@@ -42,10 +42,10 @@ export default function TechStackPage() {
 
 
         {/* Tools */}
-        <div className='div-central mt-10 space-to-footer'>
+        <div className='div-central space-to-footer'>
           <h2 className="h2-semibold">Tools</h2>
 
-          <div className='grid grid-cols-4 gap-10 justify-items-center w-full'>
+          <div className='grid grid-cols-3 md:grid-cols-4 gap-4 md:gap-6 xl:gap-10 justify-items-center w-full'>
             {ToolSkills.map((skill) => (
               <StackSkillCard key={skill.id + skill.name} {...skill} />
             ))}
