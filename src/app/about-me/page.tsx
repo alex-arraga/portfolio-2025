@@ -47,7 +47,7 @@ export default function AboutMePage() {
               </div>
             </Card>
 
-            <div className="flex gap-4 justify-start items-center w-full">
+            <div className="flex gap-4 justify-start items-center w-full xl:max-w-md">
               {/* Age */}
               <Card className="flex flex-col justify-center items-center gap-4 md:gap-6 w-full h-full lg:max-w-60">
                 <h3 className="text-base md:h3-medium">Edad</h3>

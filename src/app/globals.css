@@ -19,7 +19,7 @@
 
 .responsive-grid {
   @apply grid grid-cols-1 justify-items-start gap-8 lg:gap-10 lg:grid-cols-2
-    xl:grid-cols-3;
+    2xl:grid-cols-3;
 }
 
 .div-central {
