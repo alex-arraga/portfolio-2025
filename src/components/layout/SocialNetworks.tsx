@@ -8,15 +8,15 @@ export const SocialNetworks = () => {
     <div className="absolute flex justify-center items-center gap-10 w-full bottom-5">
 
       <a href={MyWhatsApp} target='_blank' rel="noreferrer nofollow">
-        <IoLogoWhatsapp size={30} className="text-neutral-300 transition-all duration-300 hover:scale-125 hover:text-white" />
+        <IoLogoWhatsapp className="text-neutral-300 w-7 h-7 md:h-8 md:w-8 transition-all duration-300 hover:scale-125 hover:text-white" />
       </a>
 
       <a href={MyLinkedIn} target='_blank' rel="noreferrer nofollow">
-        <IoLogoLinkedin size={30} className="text-neutral-300 transition-all duration-300 hover:scale-125 hover:text-white" />
+        <IoLogoLinkedin className="text-neutral-300 w-7 h-7 md:h-8 md:w-8 transition-all duration-300 hover:scale-125 hover:text-white" />
       </a>
 
       <a href={MyGitHub} target='_blank' rel="noreferrer nofollow">
-        <IoLogoGithub size={30} className="text-neutral-300 transition-all duration-300 hover:scale-125 hover:text-white" />
+        <IoLogoGithub className="text-neutral-300 w-7 h-7 md:h-8 md:w-8 transition-all duration-300 hover:scale-125 hover:text-white" />
       </a>
 
     </div>

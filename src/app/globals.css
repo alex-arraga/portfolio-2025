@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 .container-page {
-  @apply relative mx-72 flex min-h-screen items-start justify-center;
+  @apply relative mx-6 flex min-h-screen items-start justify-center sm:mx-10
+    md:mx-28 xl:mx-40 2xl:mx-72;
 }
 
 .container-section {
@@ -13,7 +14,7 @@
 }
 
 .space-to-footer {
-  @apply pb-40;
+  @apply pb-10 2xl:pb-40;
 }
 
 .div-central {
@@ -25,7 +26,7 @@
 }
 
 .card {
-  @apply rounded-3xl border border-neutral-700 2xl:p-10;
+  @apply rounded-3xl border border-neutral-700 p-6 2xl:p-10;
 }
 
 .project-card {
@@ -59,51 +60,51 @@
 }
 
 .h1-bold {
-  @apply text-5xl font-bold;
+  @apply text-4xl font-bold md:text-5xl;
 }
 
 .h1-semibold {
-  @apply text-5xl font-semibold;
+  @apply text-4xl font-semibold md:text-5xl;
 }
 
 .h1-medium {
-  @apply text-5xl font-medium;
+  @apply text-4xl font-medium md:text-5xl;
 }
 
 .h2-bold {
-  @apply text-3xl font-bold;
+  @apply text-2xl font-bold md:text-3xl;
 }
 
 .h2-semibold {
-  @apply text-3xl font-semibold;
+  @apply text-2xl font-semibold md:text-3xl;
 }
 
 .h2-medium {
-  @apply text-3xl font-medium;
+  @apply text-2xl font-medium md:text-3xl;
 }
 
 .h3-bold {
-  @apply text-2xl font-bold;
+  @apply text-xl font-bold md:text-2xl;
 }
 
 .h3-semibold {
-  @apply text-2xl font-semibold;
+  @apply text-xl font-semibold md:text-2xl;
 }
 
 .h3-medium {
-  @apply text-2xl font-medium;
+  @apply text-xl font-medium md:text-2xl;
 }
 
 .h4-semibold {
-  @apply text-xl font-semibold;
+  @apply text-lg font-semibold md:text-xl;
 }
 
 .h4-medium {
-  @apply text-xl font-medium;
+  @apply text-lg font-medium md:text-xl;
 }
 
 .h4-normal {
-  @apply text-xl font-normal;
+  @apply text-lg font-normal md:text-xl;
 }
 
 .txt-gray {
