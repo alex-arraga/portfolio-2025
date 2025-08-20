@@ -17,8 +17,13 @@
   @apply pb-10 2xl:pb-40;
 }
 
+.responsive-grid {
+  @apply grid grid-cols-1 justify-items-start gap-8 lg:gap-10 lg:grid-cols-2
+    xl:grid-cols-3;
+}
+
 .div-central {
-  @apply my-4 flex flex-col items-center justify-center gap-8 md:my-8;
+  @apply my-4 flex flex-col items-center justify-center gap-8 sm:my-6 xl:my-8;
 }
 
 .divisor {
@@ -50,7 +55,7 @@
 }
 
 .work-card {
-  @apply cursor-pointer rounded-3xl border border-neutral-700 transition-all
+  @apply cursor-pointer rounded-3xl border border-neutral-700 p-6 transition-all
     duration-300 hover:shadow-slate-600 hover:border-neutral-400 hover:scale-105
     hover:shadow-xl 2xl:p-10;
 }
@@ -108,9 +113,9 @@
 }
 
 .txt-gray {
-  @apply text-sm text-neutral-300 md:text-base;
+  @apply text-sm leading-6 text-neutral-300 sm:leading-5 md:text-base;
 }
 
 .txt-gray-400 {
-  @apply text-sm text-neutral-400 md:text-base;
+  @apply text-sm leading-6 text-neutral-400 sm:leading-5 md:text-base;
 }

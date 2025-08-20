@@ -25,7 +25,7 @@ export default function ProjectsPage() {
 
           {/* Backend projects */}
           <div className="div-central">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div className="responsive-grid">
               {BackendProjects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
 
           {/* Full Stack projects */}
           <div className="div-central">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div className="responsive-grid">
               {FullStackProjects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
