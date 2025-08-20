@@ -14,7 +14,7 @@
 }
 
 .space-to-footer {
-  @apply pb-10 2xl:pb-40;
+  @apply pb-10 sm:pb-16 md:pb-20 lg:pb-28;
 }
 
 .responsive-grid {
