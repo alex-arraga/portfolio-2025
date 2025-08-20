@@ -9,12 +9,16 @@ import { Projects } from '../types'
 export const ProjectCard = (data: Projects) => {
   const type = data.type
   const isPersonalProject = type === 'personal'
+  const isProdProject = type === 'production'
+  const isInProcessProject = type === 'in-process'
 
   return (
     <Card type='project' projectType={type}>
       {/* Title of project */}
       <div className='flex justify-center items-center gap-2'>
-        <ProjectsReference status={isPersonalProject ? 'personal' : 'production'} />
+        <ProjectsReference
+          status={isPersonalProject ? 'personal' : isInProcessProject ? 'in-process' : 'production'}
+        />
         <h3 className='h3-semibold'>{data.title}</h3>
       </div>
 

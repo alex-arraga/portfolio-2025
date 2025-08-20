@@ -41,7 +41,7 @@ export const FullStackProjects: Projects[] = [
     manager: 'Javier Palma | +56 9 34172037'
   },
   {
-    type: 'production',
+    type: 'in-process',
     title: 'Podo Vip',
     description: 'Plataforma de cursos online especializados en podología',
     stack: ['Next.js', 'TypeScript', 'Postgres'],

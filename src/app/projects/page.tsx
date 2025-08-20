@@ -9,24 +9,25 @@ export default function ProjectsPage() {
 
         {/* Backend title */}
         <div className="div-central">
-          <div className="flex justify-start items-center w-full">
-            <h2 className="h2-semibold">Backend</h2>
-          </div>
-
           {/* References */}
           <div className="flex flex-col w-full gap-2 sm:gap-4">
-            <h4 className="h4-medium">Status</h4>
+            <h4 className="h4-medium">Estado</h4>
 
             <div className="flex justify-start items-center gap-6">
-              <ProjectsReference withText status="production" />
+              <ProjectsReference withText status="in-process" />
               <ProjectsReference withText status="personal" />
+              <ProjectsReference withText status="production" />
             </div>
           </div>
 
           {/* Backend projects */}
           <div className="div-central">
+            <div className="flex justify-start items-center w-full">
+              <h2 className="h2-semibold">Full Stack</h2>
+            </div>
+
             <div className="responsive-grid">
-              {BackendProjects.map((project) => (
+              {FullStackProjects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
             </div>
@@ -34,13 +35,13 @@ export default function ProjectsPage() {
 
           {/* Full Stack title */}
           <div className="flex justify-start items-center w-full">
-            <h2 className="h2-semibold">Full Stack</h2>
+            <h2 className="h2-semibold">Backend</h2>
           </div>
 
           {/* Full Stack projects */}
           <div className="div-central">
             <div className="responsive-grid">
-              {FullStackProjects.map((project) => (
+              {BackendProjects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
             </div>
