@@ -22,7 +22,7 @@ export default function AboutMePage() {
                 He trabajado para diferentes empresas en calidad de Diseñador UX/UI y también como Full Stack Developer, haciéndome cargo de todas las facetas de un proyecto, desde su diseño hasta su despliegue.
               </p>
             </div>
-            <div className="relative hidden xl:w-1/5 h-60 rounded-2xl bg-neutral-900">
+            <div className="relative hidden lg:block lg:w-2/5 xl:w-1/5 h-60 rounded-2xl bg-neutral-900">
               <Image
                 src="/images/me/me-1-black.jpg"
                 alt="alex arraga"
@@ -33,7 +33,7 @@ export default function AboutMePage() {
           </Card>
 
 
-          <div className="flex flex-col md:flex-row w-full gap-4">
+          <div className="flex flex-col lg:flex-row w-full gap-4">
             {/* Objetive */}
             <Card className="w-full">
               <h3 className="h3-semibold">Objetivos</h3>
@@ -47,16 +47,16 @@ export default function AboutMePage() {
               </div>
             </Card>
 
-            {/* Age */}
-            <div className="flex md:hidden gap-4 justify-center items-center">
-              <Card className="flex flex-col justify-center items-center gap-4 md:gap-6 w-full md:max-w-60">
+            <div className="flex gap-4 justify-start items-center w-full">
+              {/* Age */}
+              <Card className="flex flex-col justify-center items-center gap-4 md:gap-6 w-full h-full lg:max-w-60">
                 <h3 className="text-base md:h3-medium">Edad</h3>
                 <span className="text-6xl md:text-7xl font-bold">25</span>
                 <h3 className="text-base md:h3-medium">Años</h3>
               </Card>
 
               {/* English */}
-              <Card className="flex flex-col justify-center items-center gap-4 md:gap-6 w-full md:max-w-60">
+              <Card className="flex flex-col justify-center items-center gap-4 md:gap-6 w-full h-full lg:max-w-60">
                 <h3 className="text-base md:h3-medium">Level</h3>
                 <span className="text-6xl md:text-7xl font-bold">B1</span>
                 <h3 className="text-base md:h3-medium">English</h3>
