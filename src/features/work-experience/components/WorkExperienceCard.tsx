@@ -4,7 +4,7 @@ import { WorkExperience } from '../types';
 
 export const WorkExperienceCard = (data: WorkExperience) => {
   return (
-    <Card type='work' className="flex flex-col justify-between gap-6 items-start">
+    <Card type='work'>
       {/* Image */}
       <div className='relative aspect-video w-full max-h-24 rounded-2xl'>
         <Image
