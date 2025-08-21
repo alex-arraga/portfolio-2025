@@ -1,5 +1,10 @@
+import { Metadata } from 'next';
 import { StackSkillCard } from '@/features/skills/components';
 import { ArchitectureSkills, MainSkills, OtherSkills, ToolSkills } from '@/features/skills/constants';
+
+export const metadata: Metadata = {
+  title: 'Tech stack'
+}
 
 export default function TechStackPage() {
   return (

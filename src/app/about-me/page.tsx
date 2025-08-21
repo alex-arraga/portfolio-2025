@@ -1,5 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
 import { Card } from "@/components";
+
+export const metadata: Metadata = {
+  title: 'Alex Arraga'
+}
 
 export default function AboutMePage() {
   return (

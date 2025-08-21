@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import { WorkExperienceCard } from "@/features/work-experience/components"
 import { WorkExperiences } from '@/features/work-experience/constants';
+
+export const metadata: Metadata = {
+  title: 'Work experience'
+}
 
 export default function WorkExperiencePage() {
   return (

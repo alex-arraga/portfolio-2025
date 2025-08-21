@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import { ProjectCard, ProjectsReference } from "@/features/projects/components";
 import { BackendProjects, FullStackProjects } from "@/features/projects/constants";
+
+export const metadata: Metadata = {
+  title: 'Projects'
+}
 
 export default function ProjectsPage() {
   return (
