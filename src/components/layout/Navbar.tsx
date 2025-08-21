@@ -37,8 +37,8 @@ export const Navbar = () => {
   const pahtname = usePathname()
 
   return (
-    <aside className='hidden md:block fixed left-0 w-16 min-h-screen border-r border-neutral-950'>
-      <nav className='flex flex-col items-center justify-center min-h-screen gap-10'>
+    <aside className='fixed z-50 flex justify-center w-full bottom-5 rounded-full h-14 lg:rounded-none lg:left-0 lg:w-16 lg:bottom-0 lg:block lg:z-0 lg:min-h-screen lg:border-r lg:border-none'>
+      <nav className='flex bg-black mx-10 lg:mx-0 border-neutral-900 border-2 rounded-full lg:bg-transparent lg:rounded-none w-full max-w-sm lg:border-none lg:max-w-none flex-row items-center justify-center lg:flex-col lg:min-h-screen gap-10'>
 
         {OptionsNav.map((option) => (
           <div
