@@ -8,8 +8,8 @@ interface Props {
 
 export const ProjectsReference = ({ status, withText = false }: Props) => {
   const statusClass = clsx('w-2.5 h-2.5 rounded-full', {
-    'bg-purple-300': status === 'production',
-    'bg-teal-300': status === 'personal',
+    'bg-purple-400': status === 'production',
+    'bg-teal-400': status === 'personal',
     'bg-amber-300': status === 'in-process'
   })
 
@@ -19,7 +19,7 @@ export const ProjectsReference = ({ status, withText = false }: Props) => {
         <div className={"flex justify-center items-center gap-2 w-fit"}>
           <div className={statusClass} />
           <p>
-            {status === 'production' ? 'Production'
+            {status === 'production' ? 'En producción'
               : status === 'personal' ? 'Personal'
                 : 'En desarollo'
             }

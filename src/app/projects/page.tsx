@@ -13,9 +13,9 @@ export default function ProjectsPage() {
           <div className="flex flex-col w-full gap-2 sm:gap-4">
             <h4 className="h4-medium">Estado</h4>
 
-            <div className="flex justify-start items-center gap-6">
-              <ProjectsReference withText status="in-process" />
+            <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center gap-2 sm:gap-6">
               <ProjectsReference withText status="personal" />
+              <ProjectsReference withText status="in-process" />
               <ProjectsReference withText status="production" />
             </div>
           </div>
