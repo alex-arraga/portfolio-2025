@@ -10,3 +10,6 @@ Soy un desarrollador de software con más de 2 años de experiencia en desarroll
 ## Objetivo
 
 Mi objetivo es convertirme en un Backend Developer enfocado en crear soluciones escalables y APIs eficientes, utilizando tecnologias de vanguardia, como `Go`, `Redis`, `Postgres`, `Hexagonal Architecture`, entre otras.
+
+
+---
