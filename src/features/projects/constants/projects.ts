@@ -3,6 +3,7 @@ import {
   GarageGoLink,
   GestionDatosLink,
   JavierManager,
+  OldPortfolioLink,
   RicardoManager, RssScraperLink, TesloShopLink, ToDoLink
 } from "@/features/projects/constants";
 import { Projects } from "../types";
@@ -57,16 +58,27 @@ export const FullStackProjects: Projects[] = [
     title: 'Teslo Shop',
     description: 'Una ecommerce que ofrece ropa de la marca Tesla',
     stack: ['Next.js', 'TypeScript', 'Postgres'],
-    architecture: 'Server Actions',
+    architecture: 'App Router | Server Actions',
     goal: 'Crear una tienda online desde el comienzo para entender los flujos y la complejidad que conlleva este tipo de apps',
     solution: 'Utilizar el poder de las Server Actions y una base de datos Postgres, donde se guardan todas las entidades relacionadas al negocio',
     link: TesloShopLink
   },
   {
     type: 'personal',
+    title: 'Old Portfolio',
+    description: 'Una ecommerce que ofrece ropa de la marca Tesla',
+    stack: ['Next.js', 'TypeScript', 'Postgres'],
+    goal: 'Crear un portfolio de presentación donde se muestren mis conocimientos y experiencias',
+    architecture: 'App Router',
+    solution: 'Autenticación utilizando Clerk, junto con Next.js y Postgres',
+    link: OldPortfolioLink
+  },
+  {
+    type: 'personal',
     title: 'Calculadora',
     description: 'Permite almacenar un historial de calculos, además de realizar operaciones complejas',
     stack: ['Next.js', 'TypeScript', 'Postgres'],
+    architecture: 'App Router',
     goal: 'Crear una herramienta de cálculo que elimine la necesidad de recordar o reingresar resultados anteriores',
     solution: 'Permitir al usuario generar un historial de cálculos, mostrando el detalle de cada operación y su resultado',
     link: CalculatorLink
@@ -76,6 +88,7 @@ export const FullStackProjects: Projects[] = [
     title: 'To Do',
     description: 'Una aplicación para crear y gestionar tareas pendientes',
     stack: ['Next.js', 'TypeScript', 'Postgres'],
+    architecture: 'App Router',
     goal: 'Aprender a utilizar bases de datos para crear tareas y marcarlas como completadas',
     solution: 'Utilización de Postgres y formularios para la creación de las mismas',
     link: ToDoLink
