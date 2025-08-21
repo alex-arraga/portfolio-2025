@@ -1,2 +1,5 @@
 import { redirect } from "next/navigation";
-redirect('/about-me')
+
+export default function HomePage() {
+  redirect('/about-me')
+}
