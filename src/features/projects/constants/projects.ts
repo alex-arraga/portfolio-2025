@@ -1,4 +1,5 @@
 import {
+  BackendStoreLink,
   CalculatorLink,
   GarageGoLink,
   GestionDatosLink,
@@ -18,6 +19,16 @@ export const BackendProjects: Projects[] = [
     goal: 'Obtener datos estructurados de múltiples fuentes',
     solution: 'Ejecuta rutinas para extraer datos de cada feed y los almacena en base de datos',
     link: RssScraperLink
+  },
+  {
+    type: 'personal',
+    title: 'User Auth',
+    description: 'permite la autenticación de usuarios con multiples cuentas asociadas a un mismo email',
+    stack: ['Go', 'GORM', 'Postgres'],
+    architecture: 'REST API',
+    goal: 'Permitir a los usuario estar registrados con multiples cuentas',
+    solution: 'Modelado de datos para permitir relacion 1-N donde un usuario puede tener multiples cuentas asociados a un mismo email',
+    link: BackendStoreLink
   },
 ]
 
