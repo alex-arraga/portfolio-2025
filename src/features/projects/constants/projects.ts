@@ -13,7 +13,7 @@ export const BackendProjects: Projects[] = [
   {
     type: 'personal',
     title: 'RSS Scraper',
-    description: 'permite almacenar y gestionar artículos en una base de datos',
+    description: 'Permite almacenar y gestionar artículos en una base de datos',
     stack: ['Go', 'Postgres'],
     architecture: 'REST API',
     goal: 'Obtener datos estructurados de múltiples fuentes',
@@ -23,11 +23,21 @@ export const BackendProjects: Projects[] = [
   {
     type: 'personal',
     title: 'User Auth',
-    description: 'permite la autenticación de usuarios con multiples cuentas asociadas a un mismo email',
+    description: 'Permite la autenticación de usuarios con multiples cuentas asociadas a un mismo email',
     stack: ['Go', 'GORM', 'Postgres'],
     architecture: 'REST API',
     goal: 'Permitir a los usuario estar registrados con multiples cuentas',
     solution: 'Modelado de datos para permitir relacion 1-N donde un usuario puede tener multiples cuentas asociados a un mismo email',
+    link: BackendStoreLink
+  },
+  {
+    type: 'personal',
+    title: 'Crypto Ticker',
+    description: 'Simula el comportamiento del mercado de criptomendas, cada cierto intervalo de tiempo el precio de un activo fluctua',
+    stack: ['Go', 'Websockets', 'Channels'],
+    architecture: 'Hexagonal',
+    goal: 'Mejorar la comprensión en el uso de Websockets, Go routines y Channels',
+    solution: 'Crear un Websocket Server para emular la constante fluctuación de activos como BTC o ETH',
     link: BackendStoreLink
   },
 ]
