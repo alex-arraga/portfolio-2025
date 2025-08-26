@@ -1,6 +1,7 @@
 import {
   BackendStoreLink,
   CalculatorLink,
+  CryptoTickerLink,
   GarageGoLink,
   GestionDatosLink,
   JavierManager,
@@ -38,7 +39,7 @@ export const BackendProjects: Projects[] = [
     architecture: 'Hexagonal',
     goal: 'Mejorar la comprensión en el uso de Websockets, Go routines y Channels',
     solution: 'Crear un Websocket Server para emular la constante fluctuación de activos como BTC o ETH',
-    link: BackendStoreLink
+    link: CryptoTickerLink
   },
 ]
 
