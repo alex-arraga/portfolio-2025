@@ -14,6 +14,7 @@ import {
   NotionImage,
   PostgresImage,
   PostmanImage,
+  RedisImage,
   TypeScriptImage
 } from "../assets"
 
@@ -93,14 +94,22 @@ export const OtherSkills: SkillCard[] = [
     name: 'Docker',
     image: DockerImage,
   },
+]
+
+export const StorageSkills: SkillCard[] = [
   {
-    id: 5,
+    id: 1,
+    name: 'Redis',
+    image: RedisImage,
+  },
+  {
+    id: 2,
     name: 'Postgres',
     image: PostgresImage,
   },
   {
-    id: 6,
+    id: 3,
     name: 'Mongo',
     image: MongoImage,
-  }
+  },
 ]

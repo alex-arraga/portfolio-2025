@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { StackSkillCard } from '@/features/skills/components';
-import { ArchitectureSkills, MainSkills, OtherSkills, ToolSkills } from '@/features/skills/constants';
+import { ArchitectureSkills, MainSkills, OtherSkills, StorageSkills, ToolSkills } from '@/features/skills/constants';
 
 export const metadata: Metadata = {
   title: 'Tech stack'
@@ -29,6 +29,17 @@ export default function TechStackPage() {
 
           <div className='grid grid-cols-2 gap-4 md:gap-6 xl:gap-10 justify-items-center'>
             {ArchitectureSkills.map((skill) => (
+              <StackSkillCard key={skill.id + skill.name} {...skill} />
+            ))}
+          </div>
+        </div>
+
+        {/* Storage */}
+        <div className='div-central'>
+          <h2 className="h2-semibold">Storage</h2>
+
+          <div className='grid grid-cols-3 gap-4 md:gap-6 xl:gap-10 justify-items-center'>
+            {StorageSkills.map((skill) => (
               <StackSkillCard key={skill.id + skill.name} {...skill} />
             ))}
           </div>
