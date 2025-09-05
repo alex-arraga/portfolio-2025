@@ -19,11 +19,11 @@ export default function ProjectsPage() {
             <h4 className="h4-medium">Estado</h4>
 
             <div className="flex flex-col justify-start items-start gap-4">
-              <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center gap-2 sm:gap-6">
+              <div className="flex flex-col-reverse sm:flex-row justify-start items-start sm:items-center gap-2 sm:gap-6">
                 <ProjectsReference withText status="personal" />
                 <ProjectsReference withText status="personal-in-process" />
               </div>
-              <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center gap-2 sm:gap-6">
+              <div className="flex flex-col-reverse sm:flex-row justify-start items-start sm:items-center gap-2 sm:gap-6">
                 <ProjectsReference withText status="production" />
                 <ProjectsReference withText status="prod-in-process" />
               </div>
