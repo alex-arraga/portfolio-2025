@@ -8,9 +8,10 @@ interface Props {
 
 export const ProjectsReference = ({ status, withText = false }: Props) => {
   const statusClass = clsx('w-2.5 h-2.5 rounded-full', {
-    'bg-purple-400': status === 'production',
-    'bg-teal-400': status === 'personal',
-    'bg-amber-300': status === 'in-process'
+    'bg-purple-500': status === 'production',
+    'bg-purple-200': status === 'prod-in-process',
+    'bg-teal-500': status === 'personal',
+    'bg-teal-100': status === 'personal-in-process'
   })
 
   return (
@@ -21,7 +22,8 @@ export const ProjectsReference = ({ status, withText = false }: Props) => {
           <p>
             {status === 'production' ? 'En producción'
               : status === 'personal' ? 'Personal'
-                : 'En desarollo'
+                : status === 'personal-in-process' ? 'Personal - En desarollo'
+                  : 'Producción - En desarrollo'
             }
           </p>
         </div>

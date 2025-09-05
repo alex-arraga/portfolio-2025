@@ -2,6 +2,7 @@ import {
   BackendStoreLink,
   CalculatorLink,
   CryptoTickerLink,
+  EcommerceLink,
   GarageGoLink,
   GestionDatosLink,
   JavierManager,
@@ -20,6 +21,15 @@ export const BackendProjects: Projects[] = [
     goal: 'Obtener datos estructurados de múltiples fuentes',
     solution: 'Ejecuta rutinas para extraer datos de cada feed y los almacena en base de datos',
     link: RssScraperLink
+  },
+  {
+    type: 'personal-in-process',
+    title: 'Ecommerce',
+    description: 'Una tienda ecommerce que permite gestionar usuarios y productos',
+    stack: ['Go', 'Redis', 'GORM', 'Chi', 'Postgres'],
+    architecture: 'Hexagonal',
+    goal: 'Estudiar sobre la aplicación de arquitectura hexagonal y el gestionamiento de memoria cache a traves de Redis',
+    link: EcommerceLink
   },
   {
     type: 'personal',
@@ -55,7 +65,7 @@ export const FullStackProjects: Projects[] = [
     link: GarageGoLink
   },
   {
-    type: 'in-process',
+    type: 'prod-in-process',
     title: 'Podo Vip',
     description: 'Plataforma de cursos online especializados en podología',
     stack: ['Next.js', 'TypeScript', 'Postgres'],

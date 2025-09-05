@@ -4,17 +4,16 @@ import { ProjectsReference } from './ProjectsReference'
 import { StackPills } from './StackPills'
 import { Projects } from '../types'
 
-
-
 export const ProjectCard = (data: Projects) => {
   const type = data.type
 
   const isPersonalProject = type === 'personal'
+  const isPersonalInProcessProject = type === 'personal-in-process'
   const isProductionProject = type === 'production'
-  const isInProcessProject = type === 'in-process'
+  const isProductionInProcessProject = type === 'prod-in-process'
 
   const pushToLink = () => {
-    if (isProductionProject || isPersonalProject) {
+    if (isProductionProject || isPersonalProject || isPersonalInProcessProject) {
       return data.link
     }
   }
@@ -24,9 +23,7 @@ export const ProjectCard = (data: Projects) => {
       <Card type='project' projectType={type}>
         {/* Title of project */}
         <div className='flex justify-center items-center gap-2'>
-          <ProjectsReference
-            status={isPersonalProject ? 'personal' : isInProcessProject ? 'in-process' : 'production'}
-          />
+          <ProjectsReference status={type} />
           <h3 className='h3-semibold'>{data.title}</h3>
         </div>
 
@@ -49,8 +46,19 @@ export const ProjectCard = (data: Projects) => {
 
         {/* Architecture */}
         <div className='flex flex-col gap-2'>
-          <h4 className='h4-normal text-neutral-100'>{isPersonalProject ? 'Arquitectura' : 'Rol'}</h4>
-          <p className='txt-gray-400 font-light'>{isPersonalProject ? data.architecture : data.rol}</p>
+          <h4 className='h4-normal text-neutral-100'>
+            {isPersonalProject || isPersonalInProcessProject && data.architecture ? 'Arquitectura'
+              : isProductionProject || isProductionInProcessProject && data.rol ? 'Rol'
+                : ''
+            }
+          </h4>
+          <p className='txt-gray-400 font-light'>
+            {
+              isPersonalProject ? data.architecture
+                : isPersonalInProcessProject ? data.architecture
+                  : data.rol
+            }
+          </p>
         </div>
 
         {/* Divisor */}
@@ -58,14 +66,35 @@ export const ProjectCard = (data: Projects) => {
 
         {/* Goal */}
         <div className='flex flex-col gap-2'>
-          <h4 className='h4-normal text-neutral-100'>{isPersonalProject ? 'Objetivo' : 'Fecha'}</h4>
-          <p className='txt-gray-400 font-light'>{isPersonalProject ? data.goal : data.date}</p>
+          <h4 className='h4-normal text-neutral-100'>
+            {isPersonalProject || isPersonalInProcessProject && data.goal ? 'Objetivo'
+              : isProductionProject || isProductionInProcessProject && data.date ? 'Fecha'
+                : ''
+            }
+          </h4>
+          <p className='txt-gray-400 font-light'>
+            {
+              isPersonalProject || isPersonalInProcessProject ? data.goal
+                : data.date
+            }
+          </p>
         </div>
 
         {/* Solution */}
         <div className='flex flex-col gap-2'>
-          <h4 className='h4-normal text-neutral-100'>{isPersonalProject ? 'Solución' : 'Encargado'}</h4>
-          <p className='txt-gray-400 font-light'>{isPersonalProject ? data.solution : data.manager}</p>
+          <h4 className='h4-normal text-neutral-100'>
+            {isPersonalProject || isPersonalInProcessProject && data.solution ? 'Solución'
+              : isProductionProject || isProductionInProcessProject && data.manager ? 'Encargado'
+                : ''
+            }
+          </h4>
+          <p className='txt-gray-400 font-light'>
+            {
+              isPersonalProject ? data.solution
+                : isPersonalInProcessProject ? data.solution
+                  : data.manager
+            }
+          </p>
         </div>
       </Card>
     </a>

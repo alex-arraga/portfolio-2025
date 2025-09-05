@@ -44,8 +44,12 @@
   @apply transition-all duration-300 hover:shadow-teal-600 hover:text-teal-200;
 }
 
-.in-process-project-card {
-  @apply transition-all duration-300 hover:shadow-amber-600 hover:text-amber-200;
+.in-personal-process-project-card {
+  @apply transition-all duration-300 hover:shadow-teal-100 hover:text-teal-100;
+}
+
+.in-prod-process-project-card {
+  @apply transition-all duration-300 hover:shadow-purple-200 hover:text-purple-200;
 }
 
 .production-project-card {

@@ -15,8 +15,9 @@ export const Card = ({ children, className, type = 'default', projectType }: Pro
   const isWorkCard = type === 'work'
 
   const personalProjectType = projectType === 'personal'
+  const inPersonalProcessProjectType = projectType === 'personal-in-process'
   const productionProjectType = projectType === 'production'
-  const inProcessProjectType = projectType === 'in-process'
+  const inProdProcessProjectType = projectType === 'prod-in-process'
 
   return (
     <div className={clsx(`shadow-card w-full ${className}`,
@@ -25,8 +26,9 @@ export const Card = ({ children, className, type = 'default', projectType }: Pro
         'skill-card': isSkillCard,
         'work-card': isWorkCard,
         'project-card personal-project-card': isProjectCard && personalProjectType,
+        'project-card in-personal-process-project-card': isProjectCard && inPersonalProcessProjectType,
         'project-card production-project-card': isProjectCard && productionProjectType,
-        'project-card in-process-project-card': isProjectCard && inProcessProjectType,
+        'project-card in-prod-process-project-card': isProjectCard && inProdProcessProjectType,
       }
     )}>
       {children}

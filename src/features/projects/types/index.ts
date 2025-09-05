@@ -4,7 +4,7 @@ interface BaseProjects {
   stack: string[],
 }
 
-export type ProjecTypes = 'personal' | 'production' | 'in-process'
+export type ProjecTypes = 'personal' | 'production' | 'prod-in-process' | 'personal-in-process'
 
 interface PersonalProjects extends BaseProjects {
   type: 'personal'
@@ -22,11 +22,19 @@ interface ProductionProjects extends BaseProjects {
   link: string
 }
 
-interface InProcessProjects extends BaseProjects {
-  type: 'in-process'
+interface ProductionInProcessProjects extends BaseProjects {
+  type: 'prod-in-process'
   rol: string,
   date: string,
   manager: string
 }
 
-export type Projects = PersonalProjects | ProductionProjects | InProcessProjects
+interface PersonalInProcessProjects extends BaseProjects {
+  type: 'personal-in-process'
+  architecture?: string,
+  goal: string
+  solution?: string,
+  link: string
+}
+
+export type Projects = PersonalProjects | ProductionProjects | ProductionInProcessProjects | PersonalInProcessProjects
